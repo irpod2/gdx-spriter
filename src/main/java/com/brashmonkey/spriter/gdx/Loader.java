@@ -23,7 +23,6 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map.Entry;
 import java.util.Set;
-import javax.imageio.ImageIO;
 
 public class Loader extends com.brashmonkey.spriter.Loader<Sprite> implements Disposable{
 
