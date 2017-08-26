@@ -1,5 +1,5 @@
 group 'com.brashmonkey.spriter'
-version '1.0.1'
+version '1.0.2'
 
 apply plugin: 'java'
 
@@ -8,7 +8,6 @@ repositories {
     mavenCentral()
     maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
     jcenter()
-    maven {  url 'https://raw.github.com/Trixt0r/spriter/mvn/' }
 }
 
 def gdxVersion = '1.9.4'
@@ -16,7 +15,7 @@ def gdxVersion = '1.9.4'
 
 dependencies {
     compile "com.badlogicgames.gdx:gdx:$gdxVersion"
-    compile 'com.brashmonkey.spriter:spriter:1.0.1'
+    compile project(":spriter")
 }
 
 task gdxSpriter(type: Jar)
